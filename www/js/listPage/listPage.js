@@ -1,4 +1,4 @@
-//List Page Controller
+//List Page Controller 
 module.controller('ListPageCtrl', ListPage);
 
 function ListPage($scope, $state, studentList) {
