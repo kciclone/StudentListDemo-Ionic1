@@ -1,0 +1,11 @@
+<ion-view view-title="Student List">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="student in students" class="item item-avatar">
+                <img src="img/pic.png"/>
+                <h2 ng-click="loadStudent($index)" class="royal">{{student.firstname}} {{student.lastname}}</h2>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll on-infinite="loadMore()" distance="30%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>
